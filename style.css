@@ -1,0 +1,324 @@
+.page {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.frame {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+  
+  .frame .div {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+  }
+  
+  .frame .overlap-group {
+    width: 225px;
+    height: 400px;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .frame .item {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 400px;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--mainsurface);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: var(--default-XS);
+  }
+  
+  .frame .img {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-image: url(./img/image.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.frame .notice-container-1 {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    gap: 8px;
+    
+}
+
+.notice-container-2 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    gap: 8px; 
+    cursor: grab;
+    cursor: -webkit-grab;
+    overflow-x: auto;  
+    white-space: nowrap;
+}
+
+.notice-container-2::-webkit-scrollbar {
+    display: none;
+  }
+
+.frame .notice {
+    padding: 4px 8px;
+    background-color: var(--main-primary);
+    border-radius: 4px;
+}
+
+.img-1:hover .notice-container-1 {
+    display: inline-flex;
+}
+
+.img-1:hover .notice-container-1 .notice {
+    display: block;
+    transition: 0.4s ease-in-out all;
+}
+
+  .frame .notice-1 {
+    background-color: var(--mainsecondary);
+  }
+
+  .frame .notice-2 {
+    background-color: var(--palleteerror);
+  }
+
+  .frame .notice-3 {
+    background-color: var(--main-primary);
+  }
+
+  .frame .notice-4 {
+    background-color: var(--palletesuccess);
+  }
+
+  .frame .notice-5 {
+    background-color: var(--mainsecondary);
+  }
+  
+  .frame .text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--desc-text-s-font-family);
+    font-weight: var(--desc-text-s-font-weight);
+    color: var(--mainonprimary);
+    font-size: var(--desc-text-s-font-size);
+    text-align: center;
+    letter-spacing: var(--desc-text-s-letter-spacing);
+    line-height: var(--desc-text-s-line-height);
+    white-space: nowrap;
+    font-style: var(--desc-text-s-font-style);
+  }
+  
+  .frame .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .frame .div-2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-self: stretch;
+    width: 100%;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .frame .div-3 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .frame .div-4 {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    width: 100%;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .frame .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--desc-text-bold-m-font-family);
+    font-weight: var(--desc-text-bold-m-font-weight);
+    color: var(--mainonsurface);
+    font-size: var(--desc-text-bold-m-font-size);
+    letter-spacing: var(--desc-text-bold-m-letter-spacing);
+    line-height: var(--desc-text-bold-m-line-height);
+    white-space: nowrap;
+    font-style: var(--desc-text-bold-m-font-style);
+  }
+  
+  .frame .text-wrapper-2 {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--desc-text-XS-font-family);
+    font-weight: var(--desc-text-XS-font-weight);
+    color: var(--grayscale-light);
+    font-size: var(--desc-text-XS-font-size);
+    letter-spacing: var(--desc-text-XS-letter-spacing);
+    line-height: var(--desc-text-XS-line-height);
+    font-style: var(--desc-text-XS-font-style);
+  }
+  
+  .frame .div-5 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .frame .div-6 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 4px;
+    align-self: stretch;
+    width: 100%;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .frame .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--desc-text-s-font-family);
+    font-weight: var(--desc-text-s-font-weight);
+    color: var(--grayscale-hardest);
+    font-size: var(--desc-text-s-font-size);
+    letter-spacing: var(--desc-text-s-letter-spacing);
+    line-height: var(--desc-text-s-line-height);
+    white-space: nowrap;
+    font-style: var(--desc-text-s-font-style);
+  }
+  
+  .frame .text-wrapper-4 {
+    font-family: var(--desc-text-XS-font-family);
+    font-weight: var(--desc-text-XS-font-weight);
+    color: var(--grayscale-light);
+    font-size: var(--desc-text-XS-font-size);
+    line-height: var(--desc-text-XS-line-height);
+    position: relative;
+    width: fit-content;
+    letter-spacing: var(--desc-text-XS-letter-spacing);
+    white-space: nowrap;
+    font-style: var(--desc-text-XS-font-style);
+  }
+  
+  .frame .name {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--desc-text-s-font-family);
+    font-weight: var(--desc-text-s-font-weight);
+    color: var(--mainonsurface);
+    font-size: var(--desc-text-s-font-size);
+    letter-spacing: var(--desc-text-s-letter-spacing);
+    line-height: var(--desc-text-s-line-height);
+    font-style: var(--desc-text-s-font-style);
+  }
+  
+  .frame .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: var(--mainsecondary);
+    all: unset;
+    box-sizing: border-box;
+  }
+  
+  .frame .label {
+    position: relative;
+    flex: 1;
+    height: 24px;
+    margin-top: -1px;
+    font-family: var(--desc-text-s-font-family);
+    font-weight: var(--desc-text-s-font-weight);
+    color: var(--mainsecondary);
+    font-size: var(--desc-text-s-font-size);
+    text-align: center;
+    letter-spacing: var(--desc-text-s-letter-spacing);
+    line-height: var(--desc-text-s-line-height);
+    white-space: nowrap;
+    font-style: var(--desc-text-s-font-style);
+  }
+  
+  .frame .div-wrapper {
+    top: 129px;
+    left: 10px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 4px 8px;
+    position: absolute;
+    background-color: var(--main-primary);
+    border-radius: 4px;
+  }
+  
+  
+  
+  .frame .overlap {
+    width: 225px;
+    height: 400px;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .frame .img-2 {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-image: url(./img/image.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+ 
+  
