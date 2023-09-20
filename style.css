@@ -59,8 +59,16 @@
     position: relative;
     top: 10px;
     left: 10px;
-    gap: 8px;
-    
+    gap: 8px;   
+}
+
+.notice-container-5{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  gap: 8px;   
 }
 
 .notice-container-2 {
@@ -105,6 +113,22 @@
     border-radius: 4px;
 }
 
+.frame .notice1 {
+  background-image: url(./img/notice.svg);
+  max-width: 48px;
+  height: 26px;
+  border-radius: 5px;
+  background-position: center;
+}
+
+.frame .notice1:hover {
+  background-image: url(./img/notice2.svg);
+  max-width: 162px;
+  height: 26px;
+  border-radius: 5px;
+  background-position: center;
+}
+
 .img-1:hover .notice-container-1 {
     display: inline-flex;
 }
@@ -146,6 +170,10 @@
     white-space: nowrap;
     font-style: var(--desc-text-s-font-style);
     text-align: center;
+  }
+
+  .frame .text1 {
+    background-image: url(./img/notice.svg);
   }
   
   .frame .content {
@@ -190,7 +218,7 @@
   
   .frame .text-wrapper {
     position: relative;
-    width: fit-content;
+
     margin-top: -1px;
     font-family: var(--desc-text-bold-m-font-family);
     font-weight: var(--desc-text-bold-m-font-weight);
@@ -235,7 +263,7 @@
   
   .frame .text-wrapper-3 {
     position: relative;
-    width: fit-content;
+
     margin-top: -1px;
     font-family: var(--desc-text-s-font-family);
     font-weight: var(--desc-text-s-font-weight);
@@ -254,7 +282,7 @@
     font-size: var(--desc-text-XS-font-size);
     line-height: var(--desc-text-XS-line-height);
     position: relative;
-    width: fit-content;
+
     letter-spacing: var(--desc-text-XS-letter-spacing);
     white-space: nowrap;
     font-style: var(--desc-text-XS-font-style);
